@@ -48,6 +48,6 @@ class ApplicationController < Sinatra::Base
   get '/users/home' do
 
     @user = User.find(session[:user_id])
-    erb :'../views/users/home'
+    erb :'/users/home'
   end
 end
